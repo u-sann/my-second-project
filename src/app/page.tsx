@@ -1,27 +1,18 @@
-import React from 'react';
-import TodoList from '../components/TodoList';
-import { defaultConfig } from 'next/dist/server/config-shared';
+"use client";
+import Form from "../app/components/Form";
+import Title from "../app/components/Title";
 
-const Home = ()=>{
-    return(
-        <div 
-    className={`
-        group 
-        bg-blue-200 hover:bg-gray-600 
-        w-auto m-6 text-center p-4 rounded 
-        transition duration-300
-    `}
->
-    <div 
-        className={`
-        text-black group-hover:text-white 
-        font-bold
-        `}
-    >
-    to do app
-    </div>
-</div>
-
-    )
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-gray-100 py-10 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+        <Title/>
+     </div>
+     <div><Form/></div>
+      
+    </main>
+  )
 };
-export default Home;
+
+
+
